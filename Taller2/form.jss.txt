@@ -1,0 +1,35 @@
+// Método 1:
+sea  d  =  nueva  fecha ( ) ;
+documento . getElementById ( "fecha" ) . innerHTML  =
+  "<h1> Hora actual:"  +  d . getHours ( )  +  ":"  +  d . getMinutes ( )  +  ":"  +  d . getSeconds ( )   +  "</h1>"
+
+// Usando cadenas de plantillas
+  documento . getElementById ( "fecha" ) . innerHTML  =
+  `<h1> Hora actual: $ { d . getHours ( ) } : $ { d . getMinutes ( ) } : $ { d . getSeconds ( ) } </h1> `
+
+
+// Método 2: 
+
+function  getHour ( ) {
+    const  h  =  nueva  fecha ( ) ;
+     horas  const =  ( ( h . getHours ( )  <  10 ) ? "0" : "" )  +  h . getHours ( ) ;
+     minutos  const =  ( ( h . getMinutes ( )  <  10 ) ? "0" : "" )  +  h . getMinutes ( ) ;
+     segundos  const =  ( ( h . getSeconds ( )  <  10 ) ? "0" : "" )  +  h . getSeconds ( ) ;
+
+    consola . log ( "Hora actual:"  +  horas  +  ":"  +  minutos  +  ":"  +  segundos ) ;
+
+}
+
+getHour ( ) ;
+
+// Método 2.1 - Usando IIFE:
+
+( función ( ) {
+    const  h  =  nueva  fecha ( ) ;
+     horas  const =  ( ( h . getHours ( )  <  10 ) ? "0" : "" )  +  h . getHours ( ) ;
+     minutos  const =  ( ( h . getMinutes ( )  <  10 ) ? "0" : "" )  +  h . getMinutes ( ) ;
+     segundos  const =  ( ( h . getSeconds ( )  <  10 ) ? "0" : "" )  +  h . getSeconds ( ) ;
+
+    consola . log ( "Hora actual:"  +  horas  +  ":"  +  minutos  +  ":"  +  segundos ) ;
+
+} ) ( ) ;

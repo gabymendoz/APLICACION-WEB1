@@ -1,0 +1,125 @@
+*{
+    
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: rgb(0, 0, 0);
+
+
+}
+
+.preguntas
+{
+  
+    
+    background: rgba(209, 244, 248, 0.397);
+   
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    
+    margin: auto;
+    width:995px ;
+    height:auto;
+    border-radius: 5px;
+    margin-bottom: 10px ;
+    padding-bottom: 25px;
+    
+}
+
+input
+{
+    
+    width: 25%;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 0 20px 0;
+    
+    outline: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    transition: all .5s ease;
+
+
+
+
+}
+input:focus
+{
+    border-bottom: 4px solid #666666; 
+}
+.menu
+{
+    margin: 20px;
+    height: 100%;
+    
+    
+}
+.menu span{
+    float: left;
+  
+    font-family:  'Roboto', sans-serif;
+    
+    font-size: 16px;
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 10px;
+   
+   margin-bottom: 15px;
+    
+}
+.contenedor_de_menu .preguntas h1
+{
+   float: left;
+  font-size: 28px;   
+   margin-left: 250px;
+   margin-top: 25px;
+   width: 100%;
+   height: 100x;
+   
+} 
+
+
+
+button
+{
+width: 150px;
+margin-bottom: 10px;
+background: #979797ce;
+    color:#fff ;
+    border:none ;
+    border-radius: 6px;
+
+    padding: 10px 0;
+    font-weight: normal;
+    font-family:  'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+ button :hover
+{
+    background: rgba(18, 189, 89, 0.6);
+}
+
+.marca{
+    color: rgb(255, 145, 0);
+    font-size: 20px;
+    
+}
+.link
+{
+    text-decoration: none;
+    color: #fff;
+    background: #8b8b8bdc;
+    width: 150px;   
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px; 
+    font-family:  'Roboto', sans-serif;  
+    font-size: 16px;    
+}
