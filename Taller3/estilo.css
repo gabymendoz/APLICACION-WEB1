@@ -1,0 +1,16 @@
+body {
+    background-color: #AAAAAA;
+}
+h1 {
+    color: #ffffff;
+}
+
+font {
+    font-family: "Monotype Corsiva, Verdana";
+    size: 5;
+    color: #ffffff;
+}
+
+button {
+    color: rgb(0, 0, 0);
+}
