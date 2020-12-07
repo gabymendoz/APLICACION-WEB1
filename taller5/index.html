@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taller5</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src = "from.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-sm">
+        <div>
+        <h1 >Meses del año</h1>
+        <button class="btn  btn-primary" onclick="mostrararray()"  >Mostrar</button>        
+        <p  id="imprimir"></p>
+    </div>
+    
+    <div >
+        <form action="" method="GET" >
+            <span class="h1"> Ingrese datos </span><br> <br>
+            <label for="codigo">
+        
+        <input id="codigo" class="form-control" name="codigo" type="number" placeholder="codigo"></label> <br>
+        <label for="nombre"> 
+        <input id="nombre" class="form-control" name="nombre" type="text" placeholder="nombre"></label> <br>
+        <label for="precio">
+        <input id="precio" class="form-control" name="precio" type="number" placeholder="precio"></label><br> <br>
+        <button class="btn btn-success"  type="reset" onclick=" productoNuevo()">Crear</button>
+        <button  type="button" class="btn btn-success" onclick="mostrar()" >mostra </button>
+        <button  type="submit" class="btn  btn-primary" onclick="Limpiar()" >Limpiar</button>
+        <br><br>
+        <p class="card-text" id="objetos" ></p>
+        
+    </form>
+    
+    </div>    
+    </div>
+    
+
+
+        
+    
+
+  
+
+  </body>
+</html>

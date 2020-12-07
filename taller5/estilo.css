@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background: rgba(144, 252, 243, 0.795);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input {
+    
+    width: 25%;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 0 20px 0;
+    border-bottom: 4px solid #8bb628;
+    outline: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(0, 30, 56);
+    margin-top: 20px;     
+}
+
+button {
+    padding: 10px 10px 10px 10px; background-color: rgb(150, 211, 158);
+    border-radius: 4px;
+    border: none;
+    
+}
