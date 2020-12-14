@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 8</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <div>
+            <nav>
+                <ul class="nav">
+
+                    <li class="nav-item"> <a class="nav-item" href="#interfaznode">Constantes de la interfaz node</a> </li>
+                    <li class="nav-item"> <a class="nav-item" href="#metodo">Métodos de node</a> </li>
+                    <li class="nav-item"><a class="nav-item" href="#esquema">Esquema de como acceder a un Nodo</a></li>
+                    <li class="nav-item"> <a class="nav-item" href="#crear">Pasos para crear un nodo</a></li>
+                    <li class="nav-item"> <a class="nav-item" href="#eliminar">Pasos para eliminar un nodo</a></li>
+                    <li class="nav-item"> <a class="nav-item" href="#insercion">Inserción de un nuevo nodo</a></li>
+                </ul>
+                <div>
+    </header>
+
+    <div class="contenedor">
+        <div>
+            <button class="boton" onclick="myFunction()">Muestre los nodos que se han creado</button>
+            <p id="demo"></p>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="contenedor2">
+            <section> <br>
+                <h1 id="interfaznode" ALIGN=CENTER>Constantes de la interfaz node</h1>
+                <table class="cuadro" width="20%" height="50" border="1">
+                    
+                        <tr><th colspan="3">Constantes de la interfaz</th></tr>
+                        <tr><th>Nombres de la constante</th><th>Valores que recibe</th>
+                        <th>Valores que revuelve</th></tr>
+                        <tr><td>Node.ELEMENT_NODE</td><td><td>1</td></td></tr>
+                        <tr><td>Node.ATTRIBUTE_NODE<td><td>2</td></td></td></tr>
+                        <tr><td>Node.TEXT_NODE<td><td>3</td></td></td></tr>
+                        <tr><td>Node.CDATA_SECTION_NODE<td><td>4</td></td></td></tr>
+                        <tr><td>Node.ENTITY_REFERENCE_NODE<td><td>5</td></td></td></tr>
+                        <tr><td>Node.ENTITY_NODE<td><td>6</td></td></td></tr>
+                        <tr><td>Node.PROCESSING_INSTRUCTION_NODE<td><td>7</td></td></td></tr>
+                        <tr><td>Node.COMMENT_NODE<td><td>8</td></td></td></tr>
+                        <tr><td>Node.DOCUMENT_NODE</td><td><td>9</td></td></tr>
+                        <tr><td>Node.DOCUMENT_TYPE_NODE</td><td><td>10</td></td></tr>
+                        <tr><td>Node.DOCUMENT_FRAGMENT_NODE</td><td><td>11</td></td></tr>
+                        <tr><td>Node.NOTATION_NODE</td><td><td>12</td></td></tr>
+                </table> <br>
+
+                <h1 id="metodo" ALIGN=CENTER>Métodos de node</h1>
+                <table class="cuadro" width="20%" height="50" border="1">
+                    <tr><th colspan="3">Métodos</th></tr>
+                    <tr><th>Nombre del método</th><th>Valor que recibe</th>
+                    <th>Valor que revuelve</th></tr>
+                    <tr><td>nodeName</td><td></td><td>String</td></tr>
+                    <tr><td>nodeValue</td><td><td>String</td></td></tr>
+                    <tr><td>nodeType</td><td><td>Number</td></td></tr>
+                    <tr><td>ownerDocument</td><td><td>Document</td></td>
+                    </tr>
+                    <tr><td>firstChild</td><td><td>Node</td></td></tr>
+                    <tr><td>lastChild</td><td><td>Node</td></td></tr>
+                    <tr><td>childNodes</td><td><td>NodeList</td></td>
+                    </tr>
+                    <tr><td>previousSibling</td><td><td>Node</td></td>
+                    </tr>
+                    <tr><td>nextSibling</td><td><td>Node</td></td>
+                    </tr>
+                    <tr><td>hasChildNodes()</td><td><td>Bolean</td>
+                    </td></tr>
+                    <tr><td>attributes</td><td><td>NamedNodeMap</td>
+                    </td></tr>
+                    <tr><td>appendChild(nodo)</td><td><td>Node</td>
+                    </td></tr>
+                    <tr><td>removeChild(nodo)</td><td><td>Node</td></td>
+                    </td></tr>
+                    <tr><td>replaceChild(nuevo Nodo,anteriorNodo)</td><td>
+                    <td>Node</td></td></tr>
+                    <tr><td>insertBefore(nuevo Nodo, anteriorNodo)</td><td>
+                    <td>Node</td></td></tr>
+                </table>
+            </section>
+
+            <section>
+                <div>
+                    <h1 id="esquema" ALIGN=CENTER>Esquema de como acceder a un Nodo</h1>
+                    <div class="img">
+                        <img  src="img/imagen1.jpg" alt="esquema">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h1 id="crear" ALIGN=CENTER>Pasos para crear un nodo tipo element</h1>
+                    <div class="texto">
+                        <li>Se crea un nodo de tipo Element</li>
+                        <li>Utlizamos el método createElement</li>
+                        <li>las sintasis es la siguiente: var nombre_elemento =document.createElement("p")</li>
+                        <li>acabamos de crear un elemento p que va dentro del metodo. </p>
+                        </li> <br>
+                        <h1 id="eliminar" ALIGN=CENTER>Pasos para eliminar un nodo tipo element</h1>
+                        <li>Se utiliza en método <b>removeChild()</b> </li>
+                        <li>Dentro del paréntesis de método ponemos el nodo que queremos eliminar</li>
+                        <li>Debemos eliminarlo desde su nodo padre Ejemplo:</li>
+                        <li>suprimir = document.getElementById("provisional") <br>
+                            suprimir.parentNode.removeChild(suprimir) </p>
+                        </li>
+                    </div><br>
+                </div>
+            </section>
+
+            <section>
+                <h1 id="insercion" ALIGN=CENTER>Insercion de nodos</h1>
+                <div class="texto">
+                    <P>1. Se inicia el arbol vacio, es decir raíz apunta a null:</P>
+                    <img class="imagen" src="img/IMAGEN2.jpg" alt="paso 1">
+                    <p>2. Insertamos un valor ejemplo 300</p>
+                    <img src="img/imagen3.jpg" alt="">
+                    <p>3. Insertamos el valor 50. Debemos analizar si raíz es distinto a
+                        null verificamos si 50 es mayor o menor a la información del nodo
+                        apuntado por raíz, en este caso es menor y como el subárbol izquierdo
+                        es null debemos insertarlo allí.</p>
+                    <img src="img/iamgen4.jpg" alt="">
+                    <p>4. Insertamos el 50. Hay que tener en cuenta que siempre comenzamos las
+                        comparaciones a partir de raíz. El 100 es menor que 300, descendemos por
+                        el subárbol izquierdo. Luego analizamos y vemos que el 100 es mayor a 50,
+                        debemos avanzar por derecha. Como el subárbol derecho es null lo insertamos
+                        en dicha posición.</p>
+                    <img src="img/iamgen5.jpg" alt="">
+                    <p>5 Insertamos el 400 y el árbol será:</p>
+                    <img src="img/iamgen6.jpg" alt="">
+                    <p>Como podemos observar si cada vez que insertamos un nodo repetamos este algoritmo
+                        siempre estaremos en presencia de un árbol binario ordenado.</p>
+                </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
